@@ -53,7 +53,7 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/Button"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editText"
@@ -61,13 +61,15 @@
             android:layout_marginTop="-94dp"
             android:text="Button" />
 
-        <TextView
+        <TextClock
             android:id="@+id/textClock"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Button"
-            android:layout_centerHorizontal="true"
-            android:textSize="24sp" />
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button"
+            android:format12Hour="hh:mm a"
+            android:textAlignment="center" />
+
     </RelativeLayout>
 
     <RelativeLayout
